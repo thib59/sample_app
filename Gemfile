@@ -15,6 +15,10 @@ gem 'pg'
 
 group :development do
   gem 'rspec-rails', '2.5.0'
+  gem 'ZenTest'
+  gem 'autotest'
+  gem 'autotest-growl'
+  gem 'autotest-fsevent'
 end
 
 group :test do
