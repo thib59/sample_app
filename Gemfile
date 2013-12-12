@@ -7,13 +7,14 @@ gem 'rake','0.8.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
+
 # gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 # gem 'sqlite3-ruby', '1.3.2', :group => :development
 
-gem 'pg'
+
 
 group :development do
+  gem 'sqlite3'
   gem 'rspec-rails', '2.5.0'
   gem 'ZenTest'
   gem 'autotest'
@@ -22,8 +23,13 @@ group :development do
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'rspec', '2.5.0'
   gem 'webrat', '0.7.1'
+end
+
+group :production do
+gem 'pg'
 end
 
 # Use unicorn as the web server
